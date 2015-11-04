@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fede Crespo || Day2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="content">
+      <section>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <h2>Travel using a:</h2>
+          <form action="./controllers/validate.php" method="post">
+            <div class="form-group">
+              <label for="plane">Plane: </label>
+              <input class="form-control" type="radio" name="transport" value="plane" id="plane">
+            </div>
+            <div class="form-group">
+              <label for="car">Car: </label>
+              <input class="form-control" type="radio" name="transport" value="car"  id="car" checked>
+            </div>
+            <div class="form-group">
+              <label for="bike">Bike: </label>
+              <input class="form-control" type="radio" name="transport" value="bike" id="bike">
+            </div>
+            <div class="form-group">
+              <label for="passengers">Passengers: </label>
+              <input class="form-control" type="text" name="passengers" id="passengers">
+            </div>
+            <div class="form-group">
+              <input class="form-control btn" type="submit" name="submit" value="Travel !">
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
