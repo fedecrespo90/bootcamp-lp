@@ -1,6 +1,7 @@
 <?php
-  # SWITCH $action
-  switch ($action) {
+  # SWITCHs 
+  switch ($action) 
+  {
     case 'single':
       include('routes/single.php');
       break;

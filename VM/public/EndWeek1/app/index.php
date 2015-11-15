@@ -5,12 +5,14 @@
   $clean = new Cleaner();
 
   # GETs
-  $action = $clean->text($_GET['action']);
-  if($_GET['id']!="")
+  if(!empty($_GET) && !empty($_GET['action']) && !empty($_GET['id']))
   {
-    $id = $clean->num($_GET['id']);
+	$action = $clean->text($_GET['action']);
+	if($_GET['id']!="")
+	{
+	  $id = $clean->num($_GET['id']);
+	}
   }
-
 
   # DEFAULT ACTION
   $default = 'list';

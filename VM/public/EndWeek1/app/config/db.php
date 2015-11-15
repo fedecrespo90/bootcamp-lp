@@ -10,9 +10,9 @@ switch($environment)
 {
   case 'dev':
     $host = 'localhost';
-    $dbname = 'bootcampTest';
+    $dbname = 'bookstore';
     $user = 'root';
-    $pass =  'chicho1';
+    $pass =  'root';
 
     $dbh = $model->connect($host,$dbname,$user,$pass);
     break;
