@@ -34,6 +34,9 @@ class Transport implements Traveling{
     public function setMaxPassengers($max){
         $this->maxPassengers =$max;
     }
+    public function getTravelDistance($minutes){
+        return ($this->getSpeed()/60)*$minutes;
+    }
 
 }
 ?>
