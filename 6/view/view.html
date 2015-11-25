@@ -5,23 +5,22 @@
     <link href="/css/template.css" rel="stylesheet">
 </head>
 <body>
- 	<div id="header">
+    <div id="header">
         <a href="/"><h1> Books </h1></a>
     </div>
     <div class="books">
     {% for book in books %}
         <div class="book">
-           <h1>Book Title: {{book.title}}</h1>
-    	<h2>Author: {{book.author}}</h2>
-    	<strong>Main characters:</strong>
-    	<ul>
-    		{% for character in book.main_characters %}
-      		<li>{{character}}</li>
-      		{% endfor %}
-    	</ul>
-  		</div>
+            <h1>Book Title: {{book.title}}</h1>
+    	      <h2>Author: {{book.author}}</h2>
+    	      <strong>Main characters:</strong>
+    	      <ul>
+    		    {% for character in book.main_characters %}
+      		      <li>{{character}}</li>
+      		  {% endfor %}
+    	      </ul>
+  		  </div>
   	{% endfor %}
-</div>
-	
+    </div>
 </body>
 </html>
