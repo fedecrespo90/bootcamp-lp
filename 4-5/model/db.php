@@ -1,12 +1,12 @@
 <?php
 class DB{
 
-	private $db;
+    private $db;
 
     public function __construct() {
 
-        $user='grupo_52';
-        $password='9ayASpPgbc6RLqyC';
+        $user='root';
+        $password='root';
         
         try{
            $this->db = new PDO('mysql:host=127.0.0.1;dbname=bookstore', $user, $password);
