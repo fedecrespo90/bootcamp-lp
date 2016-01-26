@@ -1,0 +1,10 @@
+  <div class="book">
+      <h1>Book Title: {{ title }}</h1>
+      <h2>Author: {{ author }}</h2>
+    <strong>Main characters:</strong>
+    <ul>
+      {% for item in main_characters %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
