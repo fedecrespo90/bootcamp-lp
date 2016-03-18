@@ -1,0 +1,56 @@
+<div class="contain-to-grid">
+  <nav class="top-bar" data-topbar role="navigation">
+    <!-- Logo -->
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">Bookstore</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Search box -->
+      <ul class="left">
+        <li class="has-form">
+          <form method="post" action="<?php echo $_SERVER['REQUEST_URI'].'?action=resultSearch';?>" id="searchform">
+            <!--Search input-->
+            <div class="row collapse">
+              <div class="large-8 small-9 columns">
+                <input type="search" placeholder="Find a book..." name="bookName">
+              </div>
+              <div class="large-4 small-3 columns">
+                <input class="alert button expand" type="submit" name="submitSearch" value="Search">
+              </div>
+            </div>
+          </form>
+        </li>
+      </ul>
+      <!-- Right buttons -->
+      <ul class="right">
+        <li><a href="#">My Library</a></li>
+        <li><a href="#">User Guide</a></li>
+        <li><a href="#">Messages</a></li>
+        <li class="has-dropdown"><a href="#">Admin</a>
+          <ul class="dropdown">
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>
+<section class="main-section">
+  <!-- content goes here -->
+    <header id="site-header">
+        <div class="row">
+            <div class="large-12 columns">
+                <center><h1>Welcome to your Book<b>store</b></h1></center>
+            </div>
+        </div>
+    </header>
+    <!-- List of books -->
+    <?php
+      include $path . 'views/list.php';  // the variable $path contains the absolute path of the app
+    ?>
+</section>

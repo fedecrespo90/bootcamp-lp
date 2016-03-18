@@ -1,0 +1,42 @@
+<div class="contain-to-grid">
+  <nav class="top-bar" data-topbar role="navigation">
+    <!-- Logo -->
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#" onclick="history.back();"><-BACK</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right buttons -->
+      <ul class="right">
+        <li><a href="#">My Library</a></li>
+        <li><a href="#">User Guide</a></li>
+        <li><a href="#">Messages</a></li>
+        <li class="has-dropdown"><a href="#">Admin</a>
+          <ul class="dropdown">
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>
+
+<section class="main-section">
+  <!-- content goes here -->
+  <?php
+  if(isset($_POST['submitSearch'])) {
+    include $path . 'views/booksSearched.php';  // List of books searched
+  } else {
+    if ($action == 'info') {
+      include $path . 'views/info.php';         // Single book selected
+    } else {
+      include $path . 'views/edit.php';         // Edit book
+    }
+  }
+  ?>
+</section>

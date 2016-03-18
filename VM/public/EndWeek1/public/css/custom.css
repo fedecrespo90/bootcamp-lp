@@ -1,0 +1,58 @@
+* {
+  cursor: default;
+}
+a {
+    color: #0066c0;
+    font-weight: 400;
+}
+p.titleBook {
+  font-size: 1.6rem;
+}
+p.description {
+  text-align: justify !important;
+  font-size: 0.8rem;
+}
+p.price {
+  color:green;
+  font-weight: bold;
+  line-height: 1.6rem;
+}
+.postfix.button.round {
+    border-radius: 0;
+    border-top-left-radius: 62.5rem;
+    border-top-right-radius: 62.5rem;
+    border-bottom-right-radius: 62.5rem;
+    border-bottom-left-radius: 62.5rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+article.infoArticle {
+   margin: 2% 10%;
+   border: 0.1875rem solid;
+   padding: 0.5%;
+}
+img[name="bookImage"] {
+  margin: 2%;
+}
+div.infoBook {
+  margin-top: : 1%;
+}
+label[for="price"] {
+    color: gray;
+    cursor: default;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    margin-bottom: 0;
+}
+a[name="purchaseButton"] {
+  line-height: 0
+}
+.uploadButton {
+  margin: 0rem;
+}
+.cursorText {
+  cursor:text;
+}
